@@ -3,8 +3,8 @@ package lesson_5;
 import static lesson_5.SumArray.demonstrateArrayIndexOutOfBounds;
 import static lesson_5.SumArray.sum4x4Array;
 
-public class Lesson_5 {
-    static void main() {
+public class Lesson5 {
+    public static void main(String[] args) {
         // Тест 1: Корректный массив
         testArray(new String[][]{
                 {"1", "2", "3", "4"},
