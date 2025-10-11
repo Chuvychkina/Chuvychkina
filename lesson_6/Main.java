@@ -2,7 +2,8 @@ package lesson_6;
 
 import java.util.*;
 
-import static lesson_6.Student.*;
+import static lesson_6.Decanat.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -51,6 +52,23 @@ public class Main {
         // Печатаем студентов по курсу
         printStudents(studentSet, 3); // Иван перешел на 3
         printStudents(studentSet, 4); // Анна перешла на 4
+
+
+        // Пример использования PhoneBook
+
+        PhoneBook phoneBook = new PhoneBook();
+
+        // Добавляем записи
+        phoneBook.add("Иванов", "+7-123-456-78-90");
+        phoneBook.add("Иванов", "+7-987-654-32-10");
+        phoneBook.add("Петров", "+7-555-123-45-67");
+        phoneBook.add("Сидоров", "+7-999-888-77-66");
+
+        // Ищем номера
+        System.out.printf("Номера Ивановых: %s%n", phoneBook.get("Иванов"));
+        System.out.printf("Номера Петровых: %s%n", phoneBook.get("Петров"));
+        System.out.printf("Номера Сидоровых: %s%n", phoneBook.get("Сидоров"));
+        System.out.printf("Номера для несуществующей фамилии: %s%n", phoneBook.get("Неизвестный"));
     }
 }
 
